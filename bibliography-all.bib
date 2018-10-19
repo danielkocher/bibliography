@@ -1127,4 +1127,20 @@
   url      = {https://doi.org/10.1007/s00778-007-0072-z},
 }
 
+@Article{augsten-vldbj-2012,
+  author   = {Augsten, Nikolaus and B{\"o}hlen, Michael and Dyreson, Curtis and Gamper, Johann},
+  title    = {{Windowed pq-grams for approximate joins of data-centric XML}},
+  journal  = {The VLDB Journal},
+  year     = {2012},
+  volume   = {21},
+  number   = {4},
+  pages    = {463--488},
+  month    = {Aug},
+  issn     = {0949-877X},
+  abstract = {In data integration applications, a join matches elements that are common to two data sources. Since elements are represented slightly different in each source, an approximate join must be used to do the matching. For XML data, most existing approximate join strategies are based on some ordered tree matching technique, such as the tree edit distance. In data-centric XML, however, the sibling order is irrelevant, and two elements should match even if their subelement order varies. Thus, approximate joins for data-centric XML must leverage unordered tree matching techniques. This is computationally hard since the algorithms cannot rely on a predefined sibling order. In this paper, we give a solution for approximate joins based on unordered tree matching. The core of our solution are windowed pq-grams which are small subtrees of a specific shape. We develop an efficient technique to generate windowed pq-grams in a three-step process: sort the tree, extend the sorted tree with dummy nodes, and decompose the extended tree into windowed pq-grams. The windowed pq-grams distance between two trees is the number of pq-grams that are in one tree decomposition only. We show that our distance is a pseudo-metric and empirically demonstrate that it effectively approximates the unordered tree edit distance. The approximate join using windowed pq-grams can be efficiently implemented as an equality join on strings, which avoids the costly computation of the distance between every pair of input trees. Experiments with synthetic and real world data confirm the analytic results and show the effectiveness and efficiency of our technique.},
+  day      = {01},
+  doi      = {10.1007/s00778-011-0254-6},
+  url      = {https://doi.org/10.1007/s00778-011-0254-6},
+}
+
 @Comment{jabref-meta: databaseType:bibtex;}
